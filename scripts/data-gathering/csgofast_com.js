@@ -3,7 +3,7 @@ let lastRollTimestamp = null;
 const website = "csgofastcom";
 const OBSERVER_CONFIG = { childList: true, subtree: true };
 
-const sendRResult = (name, value) => {
+const sendResult = (name, value) => {
   fetch(`http://localhost:3000/sets/${name}/add/${value}`, {
     method: "POST",
   });
@@ -29,7 +29,7 @@ const reactToMutation = () => {
 
   const result = firstLi.textContent;
   console.log(result);
-  sendRResult(website, result);
+  sendResult(website, result);
   lastRollTimestamp = Date.now();
 };
 
