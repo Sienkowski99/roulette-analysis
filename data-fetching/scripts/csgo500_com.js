@@ -56,4 +56,4 @@ const observer = new MutationObserver((mutationsList) => {
 });
 
 observer.observe(elementToObserve, OBSERVER_CONFIG);
-// csgofast.com
+// csgo500.com
